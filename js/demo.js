@@ -2,7 +2,7 @@
  * Particleground demo
  * @author Jonathan Nicol - @mrjnicol
  */
-
+const ALTURA_PANTALLAS_CELULARES = 800;
 // This can be used to set the Particles Effects. Check README for more details!
 document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particles'), {
@@ -10,7 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
     lineColor: '#8d080d'
   });
   var intro = document.getElementById('intro');
-  intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
+  var particles = document.getElementById('particles');
+  if (particles.offsetHeight > ALTURA_PANTALLAS_CELULARES) {
+    intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
+  }
 }, false);
 
 

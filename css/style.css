@@ -281,7 +281,14 @@ img.d-block.w-100 {
 }
 
 @media (max-height: 800px) {
-  /* * {
-    background-color: black;
-  } */
+  #intro {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    margin-top: 40px;
+    padding: 0 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
 }
