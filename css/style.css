@@ -1,3 +1,5 @@
+/* particleground styles */
+
 *{
   margin: 0;
   padding: 0;
@@ -11,26 +13,29 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-/* particleground demo */
 
 * {
   -webkit-box-sizing: border-box;
@@ -70,6 +75,7 @@ body {
   width: 100%;
   text-align: center;
 }
+
 h2 {
   text-transform: uppercase;
   font-size: 50px;
@@ -77,6 +83,7 @@ h2 {
   color: #ffffff;
   letter-spacing: 0.05em;
 }
+
 h1::after {
   content: '';
   width: 80px;
@@ -86,6 +93,7 @@ h1::after {
   margin: 30px auto;
   line-height: 1.1;
 }
+
 p {
   margin: 0 0 30px 0;
   font-size: 24px;
@@ -134,10 +142,10 @@ p {
   }
 }
 
+/* my styles */
+
 button.servicio {
-  font-family: Futura,Trebuchet MS,Arial,sans-serif;
   text-align: center;
-  width: 600px;
   padding: 10px 100px 10px 100px;
   display: flex;
   justify-content: center;
@@ -146,13 +154,17 @@ button.servicio {
   margin-left: auto;
   background: none;
   cursor: pointer;
+  width: 600px;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
   font-size: 2em;
+  font-weight: 900;
   border: 2px solid #495057;
   background: none;
   color: #fff; 
   transition: all 0.7s ease;
 
 }
+
 button.servicio:hover {
   background: #fff;
   color: #495057;
@@ -160,6 +172,7 @@ button.servicio:hover {
 
 h2.titulo {
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-weight: 100;
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
@@ -172,12 +185,17 @@ img.logo {
 }
 
 h3.detalle {
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
   font-size: 30px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px dashed rgba(255,0,0,0.3);
 }
 
 #carouselExampleIndicators {
   width: 600px;
-  margin: 50px auto auto auto;
+  margin: 50px auto 50px auto;
 }
 
 img.d-block.w-100 {
@@ -215,6 +233,16 @@ img.d-block.w-100 {
   img.d-block.w-100 {
     height: 200px;
   }
+
+  #iconos {
+    font-size: 1.5em;
+  }
+
+  h3.detalle {
+    font-size: 30px;
+    width: 75%;
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 350px) {
@@ -240,5 +268,20 @@ img.d-block.w-100 {
   img.d-block.w-100 {
     height: 150px;
   }
+
+  #iconos {
+    font-size: 1em;
+  }
+
+  h3.detalle {
+    font-size: 30px;
+    width: 100%;
+    font-size: 1em;
+  }
 }
 
+@media (max-height: 800px) {
+  /* * {
+    background-color: black;
+  } */
+}
